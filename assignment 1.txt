@@ -1,0 +1,192 @@
+SHAKIR REHMAN SHAIKH
+
+
+
+
+ASSIGNMENTS #1
+--------------
+
+Q.1 PRINT HELLO
+---------------
+
+
+#include<stdio.h>
+//header file library adds functionality in C programs
+int main()
+//its a must function
+
+   
+
+{
+   printf("HELLO Students");
+    		//printf is a function - HELLO WILL PRINT WITHOUT QUOTES
+   return 0;
+}
+
+
+
+Q.2 PRINT HELLO in line 1 and STUDENTS in line 2
+--------------------------------------------
+
+
+#include<stdio.h>
+int main()
+
+{
+   printf("HELLO\nSTUDENTS"); // \n = new line
+   return 0;
+}
+
+
+Q.3 print “MySirG” on the screen with double quotes
+---------------------------------------------------
+
+
+
+#include<stdio.h>
+int main()
+
+{
+
+   printf("\"MYSIRG\""); // \"\" prints in double quotes
+   return 0;
+
+}
+
+
+Q.4 to find the area of the circle
+------------------------------
+
+#include<stdio.h>
+int main()
+
+{
+    float area;
+    int radius; 
+   // area is real constant so float variable is taken for decimal value
+   //Pi π is approximately equal to 3.14
+    printf("enter radius of circle ");
+    scanf("%d",&radius);
+    area=3.14*radius*radius;
+    //to cacluate are of circle: Area = π r²
+    printf("area of circle is %.2f having radious of %d", area,radius);
+    return 0;
+}
+
+
+
+Q.5 calculate the length of String using printf
+===========================================
+
+#include<stdio.h>
+
+int main()
+
+{
+    
+    int x=printf("MySirG");
+    printf("length of \"MYSIRG\" is %d",x);
+    return 0;
+}
+
+
+
+Q.6 name of the user in double quotes
+=================================
+
+#include<stdio.h>
+
+int main()
+
+{
+    char name[20]; //character variable with length of 20
+    printf("enter your name ");
+    scanf("%s",name); //string as its multiple bytes and will be in double quotes 
+    printf("\"Hello , %s\"",name); //to pring message in double quotes
+    return 0;
+}
+
+
+
+q.7 print “%d” on the screen
+========================
+
+#include<stdio.h>
+
+int main()
+
+{
+    printf("%%d"); //%% print %
+    return 0;
+}
+
+
+q. 8 print “\n” on the screen
+========================
+
+#include<stdio.h>
+
+int main()
+
+{
+    printf("\\n");
+    return 0;
+}
+
+
+q.9 print “\\” on the screen
+========================
+
+#include<stdio.h>
+
+int main()
+
+{
+    printf("\\\\"); // 2 backslath prints 1 backslash so used twice
+    return 0;
+}
+
+
+Q.10 the date format
+====================
+#include<stdio.h>
+
+int main()
+{
+
+    int d, m, y; //3 varialbes can be on one line
+    printf("\"enter DD/MM/YYYY\"\n");
+    scanf("%d %d %d",&d, &m, &y);
+    printf("Day - %d, Month - %d, Year %d", d,m,y);
+	return 0;
+}
+
+Q.11 input and out time
+=======================
+
+#include<stdio.h>
+
+int main()
+{
+	int h, m; 
+    	printf("\"enter HH:MM\"\n");
+    	scanf("%d %d",&h, &m);
+    	printf("\"%d hour and %d minute\"", h,m);
+	return 0;
+}
+
+
+
+
+Q.12 Find output of below code:
+==========================
+
+
+#include<stdio.h>
+int main()
+
+{
+    int x = printf(“ineuron”);
+    printf(“%d”,x); //error as there is no int value to print
+    return 0;
+}
